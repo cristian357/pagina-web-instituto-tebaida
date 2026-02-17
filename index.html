@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>institutotebaida</title>
+    <link rel="icon" href="imagenes/zipwp-image-5610-120x120.png">
+    <link rel="stylesheet" href="diseño/diseño.css">
+</head>
+<body>
+<div class="dore">    <header>
+        <div class="logo">
+            <img src="imagenes/zipwp-image-5610-120x120.png" alt="Instituto Tebaida">
+        </div>
+              <h1 class="titulo">FORMAMOS CON AMOR PARA LA VIDA</h1>
+    </header>
+     <nav>
+  <ul class="menu">
+    <li><a href="#inicio">Inicio</a></li>
+    <li><a href="#1">Metodología</a></li>
+    <li><a href="#carousel">carrusel</a></li>
+ 
+  </ul>
+</nav>
+ </div>
+
+    <br><br>
+    <section class="hero" id="inicio">
+        <img src="./imagenes/IMG-20250507-WA0002.jpg" alt="Imagen principal">
+    </section>
+<br>
+<br>
+<br>
+    <div class="list" id="1"> 
+        <div class="card">
+            <img src="imagenes/hola1.jpeg" alt="Educación secundaria" width="560" height="315">
+            <div class="clase1"><h3>Educación Secundaria</h3>
+            <p>Preparamos a los estudiantes con herramientas para el aprendizaje y el pensamiento crítico .</p></div>
+        </div>
+        <div class="card">
+            <img src="imagenes/hola2.jpg" alt="Educación técnica" width="560" height="315">
+            <div class="clase1"><h3>Educación Técnica</h3>
+            <p>Formación especializada en programación y sistemas, alineada con el mercado laboral .</p>
+        </div></div>
+        <div class="card">
+            <img src="imagenes/bloque2.png" alt="Ingeniería de sistemas" width="560" height="309">
+            <div class="clase1"><h3>Ingeniería de Sistemas</h3> 
+            <p>El colegio cuenta con una afiliación  con una universidad  para fortalecer esta área .</p></div>
+        </div>
+        <div class="card">
+            <img src="imagenes/sena foto.jpeg" alt="Técnico en programación" width="560" height="315">
+            <div class="clase1"><h3>Técnico Laboral en Programación SENA</h3>
+            <p>El colegio ofrece una afiliación con el SENA para formación en programación .</p></div>
+        </div>
+
+  
+    </div>
+    <br><br><br>
+
+    <div class="carousel-container" id="carousel">
+        <div class="carousel">
+            <div class="image-container">
+                <img src="imagenes/puerta-faroles.jpg" alt="Imagen 1" width="560" height="315">
+            </div>
+            <div class="image-container">
+                <img src="imagenes/IMG_20230717_174241_665.jpg" alt="Imagen 2" width="560" height="315">
+            </div>
+            <div class="image-container">
+                <img src="imagenes/IMG-20240928-WA0004.jpg" alt="Imagen 3" width="560" height="315">
+            </div>
+            <div class="image-container">
+                <img src="imagenes/IMG-20240522-WA0027.jpg" alt="Imagen 4" width="560" height="315">
+            </div>
+            <div class="image-container">
+                <img src="imagenes/secundaria2.jpeg" alt="Imagen 4" width="560" height="315">
+            </div>
+            <div class="image-container">
+                <img src="imagenes/2.0.jpeg" alt="Imagen 4" width="560" height="315">
+            </div>
+            <div class="image-container">
+                <img src="imagenes/IMG-20250507-WA0002.jpg" alt="Imagen 4" width="560" height="315">
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="prev">⬅</button>
+            <button id="next">➡</button>
+        </div>
+    </div>
+    <script src="./js/carusel.js"></script>
+
+    <br>
+
+    <!-- Botón para abrir el menú -->
+    <button class="menu-btn" onclick="openMenu()">☰</button>
+
+    <!-- Capa oscura detrás del menú -->
+    <div id="overlay" class="overlay" onclick="closeMenu()"></div>
+
+    <!-- Sidebar (Menú lateral en la derecha) -->
+    <div id="sidebar" class="sidebar">
+        <span class="close-btn" onclick="closeMenu()">×</span>
+       
+        <a href="#inicio">Inicio</a>
+        <a href="./Mi_Colegio.html">Mi Colegio</a>
+        <a href="pagina1.html">Quiénes Somos</a>
+        <a href="logeo/pagina2.html">logeo</a>
+
+    </div>
+      <section class="testimonios">
+        <h2>Nuestra Oferta Académica</h2>
+        <div class="testimonios-container">
+
+            <div class="testimonio-card">
+                <div class="quote">“</div>
+                <img src="imagenes/gatito2.jpeg" alt="Educación Primaria" class="oferta-img">
+                <h3>Educación Inicial</h3>
+                <p>Programa diseñado para niños en transición, enfocándose en el desarrollo integral
+                 y habilidades básicas para iniciar su camino educativo con amor y apoyo.</p>
+            </div>
+
+            <div class="testimonio-card">
+                <div class="quote">“</div>
+                <img src="imagenes/hola1.jpeg" alt="Educación Secundaria" class="oferta-img">
+                <h3>Educación Secundaria</h3>
+                <p>Ofrecemos un currículo que prepara a los estudiantes para enfrentar desafíos futuros,
+                     dotándolos de herramientas para el aprendizaje y el pensamiento crítico</p>
+            </div>
+
+            <div class="testimonio-card">
+                <div class="quote">“</div>
+                <img src="imagenes/gatito.jpg " alt="Educación Técnica" class="oferta-img">
+                <h3>Educación Técnica</h3>
+                <p>Formación especializada que incluye programación y sistemas,
+                 alineada con las demandas del mercado para asegurar un futuro profesional exitoso.</p>
+            </div>
+
+            <div class="testimonio-card">
+                <div class="quote">“</div>
+                <img src="imagenes/gordis.jpg" alt="Media Técnica" class="oferta-img">
+                <h3>Media Técnica</h3>
+                <p>La institución promueve la formación media técnica para que los estudiantes se orienten hacia su futuro profesional, combinando el conocimiento académico con habilidades prácticas que los preparan para la educación superior o el campo laboral.</p>
+            </div>
+
+            <div class="testimonio-card">
+                <div class="quote">“</div>
+                <img src="imagenes/cursos.png" alt="Actividades Culturales y Deportivas" class="oferta-img">
+                <h3>Actividades Culturales y Deportivas</h3>
+                <p>Además de la formación académica, el Instituto Tebaida impulsa actividades culturales, artísticas y deportivas que fortalecen la creatividad, el trabajo en equipo y el desarrollo integral de los estudiantes.</p>
+            </div>
+
+            <div class="testimonio-card">
+                <div class="quote">“</div>
+                <img src="imagenes/uwu.jpg" alt="Formación en Valores" class="oferta-img">
+                <h3>Formación en Valores</h3>
+                <p>Uno de los pilares de nuestra institución es la formación en valores. Promovemos el respeto, la responsabilidad y la solidaridad, buscando que cada estudiante se convierta en un ciudadano íntegro y comprometido con su comunidad.</p>
+            </div>
+
+        </div>
+    </section>
+    <script src="./js/menu.js"></script>
+        <div class="n3">
+        <h1 id="Mi">Institución Educativa Instituto Tebaida</h1>
+    </div>
+     <br><br><br>
+      <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3978.469642229588!2d-75.7914165!3d4.4525237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e385900a9c75a59%3A0xcc5ce6e2646dc94!2sInstituci%C3%B3n%20Educativa%20Instituto%20Tebaida!5e0!3m2!1ses!2sco!4v1710092745678!5m2!1ses!2sco" 
+      width="600" 
+      height="450" 
+      style="border:0;" 
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+  <br><br><br>
+<footer>
+  <div class="footer-container">
+    
+    <!-- Columna izquierda: Logo e información -->
+    <div class="footer-left">
+      <div class="footer-logo">
+        <img src="imagenes/zipwp-image-5610-120x120.png" alt="Logo colegio">
+        <h3>INSTITUTO TEBAIDA</h3>
+      </div>
+      <p>
+        57 años de experiencia educativa en tebaida quindio, formando su juventud con el lema: 
+        <em>"FORMAMOS CON AMOR PARA LA VIDA"</em>
+      </p>
+      <p><a href="#">Secretaría de educación municipal</a></p>
+      <p><a href="#">Ministerio de Educación Nacional</a></p>
+    </div>
+
+    <!-- Columna central: Redes sociales -->
+    <div class="footer-center">
+      <h4>Redes Sociales</h4>
+      <div class="redes-icons">
+        <a href="https://www.facebook.com/institutotebaida.edu/?locale=es_LA" target="_blank">
+          <img src="./imagenes/Facebook_logo_(square).png" alt="Facebook" width="30">
+        </a>
+        <a href="https://www.instagram.com/explore/locations/696417874/institucion-educativa-instituto-tebaida/" target="_blank">
+          <img src="./imagenes/Instagram-Logo-PNG.png" alt="Instagram" width="30">
+        </a>
+      </div>
+    </div>
+
+    <!-- Columna derecha: Contacto -->
+    <div class="footer-right">
+      <h4>Contacto</h4>
+      <ul style="list-style: none; padding: 0; margin: 0;">
+        <li>📞 (+57)  7540200 - 7542183</li>
+        <li>✉️  Institutotebaida@gmail.com</li>
+        <li>📍 Calle 16 cra 6 esquina, La Tebaida Quindío</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- Derechos de autor -->
+  <div class="footer-copy">
+    © 2025 Institución INSTITUTO TEBAIDA. Todos los derechos reservados.
+  </div>
+</footer>
+
+
+</body>
+</html>

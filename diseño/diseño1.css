@@ -1,0 +1,190 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url(../imagenes/LATEBAIDA.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.video-fondo {
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      object-fit: cover; /* cubre toda la pantalla */
+      z-index: -1; /* lo manda detrás del contenido */
+    }
+
+    /* Contenido encima del video */
+    .contenido {
+      position: relative;
+      z-index: 1;
+      color: white;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      top: 40%;
+    }
+.login-container {
+     background-color: rgba(0, 117, 25, 0.5);
+    padding: 30px;
+    border-radius: 20px;
+     box-shadow: inset -5px -5px rgba(0,0,0,0.5);
+    text-align: center;
+    width: 300px;
+}
+.login-container h2 {
+    margin-bottom: 20px;
+}
+.input-group {
+    margin-bottom: 10px;
+    text-align: left;
+}
+.input-group label {
+    display: block;
+    font-weight: bold;
+}
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.btn {
+    background: #667eea;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.btn:hover {
+    background: #5a67d8;
+}
+footer {
+    background: green;
+    color: white;
+    padding: 10px;
+}
+.contenedor {
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    gap: 20px; /* Espacio entre la imagen y el texto */
+    max-width: 800px; /* Ajusta el ancho máximo */
+    margin: auto; /* Centra el contenedor en la página */
+    padding: 20px;
+   
+ 
+}
+
+.contenedor img {
+    max-width: 30%;
+    height: auto;
+    border-radius: 10px; /* Bordes redondeados opcionales */
+}
+.contenedor p{
+    flex: 1; /* Permite que el texto ocupe el espacio restante */
+    font-size: 18px; /* Ajusta el tamaño del texto */
+    line-height: 1.5; /* Mejora la lectura */
+}
+.contenedor2 {
+    display: flex;
+    flex-direction: row-reverse; /* Cambia el orden: imagen a la derecha */
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    gap: 20px; /* Espacio entre la imagen y el texto */
+    max-width: 800px; /* Ajusta el ancho máximo */
+    margin: auto; /* Centra el contenedor en la página */
+    padding: 20px;
+}
+.contenedor2 img {
+    max-width: 30%;
+    height: auto;
+    border-radius: 10px; /* Bordes redondeados opcionales */
+}
+.contenedor2 p{
+    flex: 1; /* Permite que el texto ocupe el espacio restante */
+    font-size: 18px; /* Ajusta el tamaño del texto */
+    line-height: 1.5; /* Mejora la lectura */
+}
+/* Botón de menú */
+ .menu-btn {
+    font-size: 30px;
+    cursor: pointer;
+    position: fixed;
+    top: 15px;
+    right: 15px; /* Mover al lado derecho */
+    background: none;
+    border: none;
+    color: white;
+    padding: 10px;
+    z-index: 1001;
+}
+
+/* Fondo oscuro al abrir el menú */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s, visibility 0.3s;
+    z-index: 999;
+}
+
+/* Sidebar (Menú lateral en el lado derecho) */
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    right: 0; /* Mover al lado derecho */
+    background-color: green;
+    transform: translateX(100%); /* Cambiar para que inicie oculto en la derecha */
+    transition: transform 0.3s ease-in-out;
+    padding-top: 60px;
+    z-index: 1000;
+}
+
+/* Estilos del menú */
+.sidebar a {
+    text-align: center;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 22px;
+    color: white;
+    display: block;
+    transition: background 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+/* Botón de cerrar */
+.close-btn {
+    position: absolute;
+    top: 15px;
+    left: 15px; /* Mover el botón de cerrar al lado izquierdo */
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+}
+
+/* Clases activas */
+.sidebar.active {
+    transform: translateX(0);
+}
+
+.overlay.active {
+    visibility: visible;
+    opacity: 1;
+}
