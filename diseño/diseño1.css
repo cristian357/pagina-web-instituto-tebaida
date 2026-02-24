@@ -23,13 +23,13 @@ body {
     .contenido {
       position: relative;
       z-index: 1;
-      color: white;
+      color: #F9FAFB;
       text-align: center;
       font-family: Arial, sans-serif;
       top: 40%;
     }
 .login-container {
-     background-color: rgba(0, 117, 25, 0.5);
+     background-color:#A8D5BA;
     padding: 30px;
     border-radius: 20px;
      box-shadow: inset -5px -5px rgba(0,0,0,0.5);
@@ -122,7 +122,7 @@ footer {
     right: 15px; /* Mover al lado derecho */
     background: none;
     border: none;
-    color: white;
+    color: #F9FAFB;
     padding: 10px;
     z-index: 1001;
 }
@@ -148,7 +148,7 @@ footer {
     position: fixed;
     top: 0;
     right: 0; /* Mover al lado derecho */
-    background-color: green;
+    background-color: #81C784;
     transform: translateX(100%); /* Cambiar para que inicie oculto en la derecha */
     transition: transform 0.3s ease-in-out;
     padding-top: 60px;
@@ -161,7 +161,7 @@ footer {
     padding: 10px 15px;
     text-decoration: none;
     font-size: 22px;
-    color: white;
+    color:#F9FAFB;
     display: block;
     transition: background 0.3s;
 }
@@ -176,7 +176,7 @@ footer {
     left: 15px; /* Mover el botón de cerrar al lado izquierdo */
     font-size: 30px;
     cursor: pointer;
-    color: white;
+    color:#F9FAFB;
 }
 
 /* Clases activas */
