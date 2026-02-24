@@ -1,234 +1,68 @@
-/* Estilos generales */
+/* Fondo general */
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    background: whitesmoke;
+    background: #f3f4f6;
 }
 
 /* Header */
 header {
-    background-color: #126e37; /* Verde institucional */
-    color: white;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-header h1, .titulo {
-    margin: 0;
-    font-size: 24px;
-    font-weight: bold;
-}
-.logo {
-    width: 60px;
-    border-radius: 50%;
+    background-color: #1e3a8a; /* Azul oscuro */
 }
 
-/* MENÚ CENTRADO */
-nav {
-    background-color: #ffffff;
-    padding: 10px 0;
-}
-.menu {
-    list-style: none;
-    display: flex;
-    justify-content: center;   /* 👈 CENTRA el menú */
-    align-items: center;
-    gap: 25px;
-    margin: 0;
-    padding: 0;
-    font-family: 'Georgia', serif;
-}
-
-.menu li {
-    border-right: 2px solid #ccc;
-}
-.menu li:last-child {
-    border-right: none;
-}
+/* Links del menú */
 .menu li a {
-    display: block;
-    padding: 10px 20px;
-    text-decoration: none;
-    color: #126e37;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-.menu li a:hover {
-    color: #b22222;
+    color: #1e3a8a;
 }
 
-/* Contenedor principal */
+.menu li a:hover {
+    color: #dc2626;
+}
+
+/* Contenedor */
 .container {
-    max-width: 900px;
-    margin: 40px auto 60px;
     background-color: white;
-    padding: 30px 40px;
-    border-radius: 12px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 
 /* Título secundario */
 h2 {
-    color: #006400;
-    margin-bottom: 25px;
-    font-weight: 700;
+    color: #1e3a8a;
 }
 
-/* Mensaje de éxito */
+/* Mensaje éxito */
 .success-message {
-    background-color: #d4edda;
-    color: #155724;
-    border: 2px solid #c3e6cb;
-    padding: 12px 20px;
-    border-radius: 8px;
-    font-weight: bold;
-    margin-bottom: 25px;
-    text-align: center;
+    background-color: #dbeafe;
+    color: #1e3a8a;
+    border: 2px solid #93c5fd;
 }
 
-/* Tabla */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 10px;
-}
-
+/* Tabla encabezado */
 thead {
-    background-color: #b22222;
-    color: white;
+    background-color: #1e3a8a;
 }
 
-thead th {
-    padding: 14px 12px;
-    font-weight: 700;
-    text-align: left;
-}
-
-tbody tr {
-    border-bottom: 1px solid #ddd;
-    transition: background-color 0.2s ease;
-}
+/* Hover filas */
 tbody tr:hover {
-    background-color: #ffecec;
-}
-tbody td {
-    padding: 12px 10px;
-    vertical-align: middle;
+    background-color: #e0e7ff;
 }
 
-/* Inputs para notas */
+/* Inputs */
 input[type="number"] {
-    width: 80px;
-    padding: 6px 8px;
-    border: 1.8px solid #b22222;
-    border-radius: 6px;
-    font-size: 1rem;
-    text-align: center;
-    transition: border-color 0.3s ease;
+    border: 1.8px solid #1e3a8a;
 }
+
 input[type="number"]:focus {
-    border-color: #006400;
-    outline: none;
+    border-color: #3b82f6;
 }
 
 /* Botón guardar */
 button[type="submit"] {
-    margin-top: 30px;
-    background-color: #b22222;
-    color: white;
-    border: none;
-    padding: 14px 30px;
-    font-size: 1.1rem;
-    font-weight: 700;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    background-color: #1e3a8a;
 }
+
 button[type="submit"]:hover {
-    background-color: #800000;
-}
-.titulo{
-   padding-right: 50%;
-    font-size: 28px;
-    font-weight: bold;
-    margin: 0;
-}
-.menu-btn {
-    font-size: 30px;
-    cursor: pointer;
-    position: fixed;
-    top: 15px;
-    right: 15px; /* Mover al lado derecho */
-    background: none;
-    border: none;
-    color: white;
-    padding: 10px;
-    z-index: 1001;
+    background-color: #1f2937;
 }
 
-/* Fondo oscuro al abrir el menú */
-.overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity 0.3s, visibility 0.3s;
-    z-index: 999;
-}
-
-/* Sidebar (Menú lateral en el lado derecho) */
+/* Sidebar */
 .sidebar {
-    height: 100%;
-    width: 250px;
-    position: fixed;
-    top: 0;
-    right: 0; /* Mover al lado derecho */
-    background-color: green;
-    transform: translateX(100%); /* Cambiar para que inicie oculto en la derecha */
-    transition: transform 0.3s ease-in-out;
-    padding-top: 60px;
-    z-index: 1000;
-}
-
-/* Estilos del menú */
-.sidebar a {
-    padding: 10px 15px;
-    text-decoration: none;
-    font-size: 22px;
-    color: white;
-    display: block;
-    transition: background 0.3s;
-}
-
-.sidebar a:hover {
-    background-color: rgba(255, 255, 255, 0.5);
-}
-/* Botón de cerrar */
-.close-btn {
-    position: absolute;
-    top: 15px;
-    left: 15px; /* Mover el botón de cerrar al lado izquierdo */
-    font-size: 30px;
-    cursor: pointer;
-    color: white;
-}
-
-/* Clases activas */
-.sidebar.active {
-    transform: translateX(0);
-}
-
-.overlay.active {
-    visibility: visible;
-    opacity: 1;
+    background-color: #1f2937;
 }
