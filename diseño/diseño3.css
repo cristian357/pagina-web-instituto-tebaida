@@ -1,13 +1,17 @@
+/* ================== BODY ================== */
+
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #F9FAFB; /* Fondo pastel claro */
     margin: 0;
     padding: 0;
     text-align: center;
-    background: whitesmoke;
 }
 
+/* ================== HEADER ================== */
+
 header {
-    background-color: #126e37; /* Verde institucional */
+    background-color: #A8D5BA; /* Verde pastel */
     color: white;
     padding: 20px;
     display: flex;
@@ -18,6 +22,8 @@ header {
 .logo {
     width: 100px;
 }
+
+/* ================== HERO ================== */
 
 .hero {
     position: relative;
@@ -36,21 +42,16 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(94, 140, 97, 0.6); /* Verde oscuro suave */
     padding: 10px;
     border-radius: 10px;
 }
 
-/* Contenedor del menú centrado */
-nav {
-    display: flex;
-    justify-content: center; /* Centra el menú horizontalmente */
-    background-color: #ffffff;
-}
+/* ================== NAV ================== */
 
 nav {
   display: flex;
-  justify-content: center; /* Centra horizontalmente el menú */
+  justify-content: center;
   background-color: #ffffff;
   padding: 10px 0;
 }
@@ -65,49 +66,29 @@ nav {
   font-family: 'Georgia', serif;
 }
 
-/* Ítems del menú */
 .menu li {
-  border-right: 2px solid #ccc;
+  border-right: 2px solid #dcdcdc;
   padding: 0 10px;
 }
 
-/* Eliminar borde al último */
 .menu li:last-child {
   border-right: none;
 }
-.menu a{
-    text-decoration: none;
-      display: block;
-  padding: 10px 15px;
-  text-decoration: none;
-  color: #126e37; /* Verde institucional */
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
-/* Enlaces del menú */
+
 .menu li a {
   display: block;
   padding: 10px 15px;
   text-decoration: none;
-  color: #126e37; /* Verde institucional */
+  color: #5E8C61; /* Verde pastel oscuro */
   font-weight: bold;
   transition: color 0.3s ease;
 }
 
-/* Hover */
 .menu li a:hover {
-  color: #b22222; /* Rojo institucional */
+  color: #F8B4B4; /* Rojo pastel */
 }
-.menu a:hover{
-    color: #b22222;
-}
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: #f5f5f5;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
+
+/* ================== PROFILE ================== */
 
 .profile-container {
     max-width: 600px;
@@ -125,7 +106,7 @@ body {
 .profile-header h2 {
     margin: 0;
     font-size: 28px;
-    color: #126e37;
+    color: #5E8C61;
 }
 
 .profile-actions .btn {
@@ -136,29 +117,35 @@ body {
     font-weight: bold;
 }
 
+/* Botones pastel */
 .btn.edit {
-    background-color: #007bff;
+    background-color: #A5C9FF; /* Azul pastel */
     color: white;
 }
 
 .btn.delete {
-    background-color: #dc3545;
+    background-color: #F8B4B4; /* Rojo pastel */
     color: white;
 }
 
 .btn.edit:hover {
-    background-color: #0056b3;
+    background-color: #7FB3FF;
 }
 
 .btn.delete:hover {
-    background-color: #c82333;
+    background-color: #F49797;
 }
+
+/* ================== CARD ================== */
 
 .profile-card {
     background: white;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    width: 400px;
+    margin: auto;
+    font-family: Arial, sans-serif;
 }
 
 .profile-card table {
@@ -170,37 +157,13 @@ body {
 .profile-card td {
     padding: 10px;
     text-align: left;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #e0e0e0;
 }
 
 .profile-card th {
-    background-color: #126e37;
+    background-color: #A8D5BA; /* Verde pastel */
     color: white;
     width: 30%;
-}
-
-.back-link {
-    margin-top: 20px;
-}
-
-.back-link a {
-    text-decoration: none;
-    color: #126e37;
-    font-weight: bold;
-}
-
-.back-link a:hover {
-    color: #b22222;
-}
-
-
-.profile-card {
-    background: white;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    width: 400px;
-    font-family: Arial, sans-serif;
 }
 
 .profile-card label {
@@ -221,25 +184,43 @@ body {
     margin-top: 20px;
     width: 100%;
     padding: 10px;
-    background-color: #28a745;
+    background-color: #81C784; /* Verde pastel */
     color: white;
     font-weight: bold;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: 0.3s ease;
 }
 
 .profile-card button:hover {
-    background-color: #218838;
+    background-color: #66BB6A;
 }
-/* Botón de menú */
- .menu-btn {
+
+/* ================== BACK LINK ================== */
+
+.back-link {
+    margin-top: 20px;
+}
+
+.back-link a {
+    text-decoration: none;
+    color: #5E8C61;
+    font-weight: bold;
+}
+
+.back-link a:hover {
+    color: #F8B4B4;
+}
+
+/* ================== SIDEBAR ================== */
+
+.menu-btn {
     font-size: 30px;
     cursor: pointer;
     position: fixed;
     top: 15px;
-    right: 15px; /* Mover al lado derecho */
+    right: 15px;
     background: none;
     border: none;
     color: white;
@@ -247,38 +228,34 @@ body {
     z-index: 1001;
 }
 
-/* Fondo oscuro al abrir el menú */
 .overlay {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.4);
     visibility: hidden;
     opacity: 0;
-    transition: opacity 0.3s, visibility 0.3s;
+    transition: 0.3s;
     z-index: 999;
 }
 
-/* Sidebar (Menú lateral en el lado derecho) */
 .sidebar {
     height: 100%;
     width: 250px;
     position: fixed;
     top: 0;
-    right: 0; /* Mover al lado derecho */
-    background-color: green;
-    transform: translateX(100%); /* Cambiar para que inicie oculto en la derecha */
+    right: 0;
+    background-color: #81C784; /* Verde pastel */
+    transform: translateX(100%);
     transition: transform 0.3s ease-in-out;
     padding-top: 60px;
     z-index: 1000;
 }
 
-/* Estilos del menú */
 .sidebar a {
     padding: 10px 15px;
-    text-decoration: none;
     font-size: 22px;
     color: white;
     display: block;
@@ -286,19 +263,18 @@ body {
 }
 
 .sidebar a:hover {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.4);
 }
-/* Botón de cerrar */
+
 .close-btn {
     position: absolute;
     top: 15px;
-    left: 15px; /* Mover el botón de cerrar al lado izquierdo */
+    left: 15px;
     font-size: 30px;
     cursor: pointer;
     color: white;
 }
 
-/* Clases activas */
 .sidebar.active {
     transform: translateX(0);
 }
