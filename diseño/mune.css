@@ -1,89 +1,47 @@
 body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #f5f7fa;
-    text-align: center;
-}
-
-header {
-   background-color: #126e37; /* Verde institucional */
-    color: white;
-     padding: 20px;
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 10px;
-}
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
+    text-align: center;
+    background: #F9FAFB; /* Fondo pastel claro */
 }
-
-nav ul li a {
+/* hola */
+/* ================= HEADER ================= */
+header {
+    background-color: #A8D5BA; /* Verde pastel */
     color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-.titulo{
-   padding-right: 50%;
-    font-size: 28px;
-    font-weight: bold;
-    margin: 0;
-}
-.menu {
-  list-style: none;
-  display: flex;
-  padding: 0;
-  margin: 0;
-  background-color: #ffffff; /* Fondo blanco */
-  font-family: 'Georgia', serif;
-}
-
-/* Estilos para los ítems del menú */
-.menu li {
-  border-right: 2px solid #ccc; /* Separador gris */
-}
-
-/* Quitar el último separador */
-.menu li:last-child {
-  border-right: none;
-}
-
-/* Estilo para los enlaces */
-.menu li a {
-  display: block;
-  padding: 10px 20px;
-  text-decoration: none;
-  color: #126e37; /* Verde institucional */
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
-
-/* Cambio de color al pasar el mouse */
-.menu li a:hover {
-  color: #b22222; /* Rojo institucional */
-}
-
-header .container {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    width: 90%;
-    margin: auto;
+    align-items: center;
+    padding: 15px 20px;
 }
 
-.logo {
+.logo img {
     width: 60px;
     border-radius: 50%;
 }
 
+/* ================= HERO ================= */
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    border: 2px solid #81C784;
+    border-radius: 10px;
+}
+
+/* ================= NAV ================= */
 nav ul {
     list-style: none;
+    padding: 0;
+    margin: 0;
     display: flex;
+    justify-content: center;
     gap: 20px;
 }
 
@@ -93,71 +51,86 @@ nav ul li a {
     font-weight: bold;
 }
 
-main.container {
-    padding: 20px;
-    max-width: 1000px;
-    margin: auto;
-    background: white;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    margin-top: 30px;
-    border-radius: 8px;
+/* ================= MENU SUPERIOR ================= */
+.menu {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    background-color: #ffffff;
+    font-family: 'Georgia', serif;
+}
+
+.menu li {
+    border-right: 2px solid #ddd;
+}
+
+.menu li:last-child {
+    border-right: none;
+}
+
+.menu li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #5E8C61;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.menu li a:hover {
+    color: #F8B4B4;
+}
+
+/* ================= TITULOS ================= */
+h1.titulo {
+    margin-top: 20px;
+    color: #F49797;
 }
 
 h2 {
+    color: #444;
+}
+
+/* ================= CARDS ================= */
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+}
+
+.card {
+    background-color: white;
+    border: 2px solid #F8B4B4;
+    padding: 20px;
+    border-radius: 15px;
+    width: 120px;
     text-align: center;
-    color: #C62828; /* Rojo */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
 }
 
-.table-responsive {
-    overflow-x: auto;
+.card:hover {
+    transform: scale(1.05);
+    background-color: #FFF3B0;
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-}
-
-th, td {
-    padding: 12px;
-    text-align: center;
-    border: 1px solid #ccc;
-}
-
-th {
-    background-color: #2E7D32; /* Verde oscuro */
-    color: white;
-}
-
-tr:nth-child(even) {
-    background-color: #f2f2f2;
-}
-
-.btn {
-    display: inline-block;
-    padding: 10px 15px;
-    background-color: #C62828; /* Rojo */
-    color: white;
+.card a {
     text-decoration: none;
-    margin-top: 20px;
-    border-radius: 5px;
+    font-weight: bold;
+    color: #5E8C61;
+    font-size: 18px;
 }
 
-.btn:hover {
-    background-color: #8E0000; /* Rojo oscuro para hover */
-}
-
-.botones {
-    text-align: center;
-    margin-top: 30px;
-}
-/* Botón de menú */
- .menu-btn {
+/* ================= SIDEBAR ================= */
+.menu-btn {
     font-size: 30px;
     cursor: pointer;
     position: fixed;
     top: 15px;
-    right: 15px; /* Mover al lado derecho */
+    right: 15px;
     background: none;
     border: none;
     color: white;
@@ -165,58 +138,54 @@ tr:nth-child(even) {
     z-index: 1001;
 }
 
-/* Fondo oscuro al abrir el menú */
 .overlay {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.4);
     visibility: hidden;
     opacity: 0;
-    transition: opacity 0.3s, visibility 0.3s;
+    transition: 0.3s;
     z-index: 999;
 }
 
-/* Sidebar (Menú lateral en el lado derecho) */
 .sidebar {
     height: 100%;
     width: 250px;
     position: fixed;
     top: 0;
-    right: 0; /* Mover al lado derecho */
-    background-color: green;
-    transform: translateX(100%); /* Cambiar para que inicie oculto en la derecha */
-    transition: transform 0.3s ease-in-out;
+    right: 0;
+    background-color: #81C784;
+    transform: translateX(100%);
+    transition: 0.3s ease-in-out;
     padding-top: 60px;
     z-index: 1000;
 }
 
-/* Estilos del menú */
 .sidebar a {
-    padding: 10px 15px;
+    padding: 12px 15px;
     text-decoration: none;
-    font-size: 22px;
+    font-size: 20px;
     color: white;
     display: block;
-    transition: background 0.3s;
+    transition: 0.3s;
 }
 
 .sidebar a:hover {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.4);
 }
-/* Botón de cerrar */
+
 .close-btn {
     position: absolute;
     top: 15px;
-    left: 15px; /* Mover el botón de cerrar al lado izquierdo */
+    left: 15px;
     font-size: 30px;
     cursor: pointer;
     color: white;
 }
 
-/* Clases activas */
 .sidebar.active {
     transform: translateX(0);
 }
@@ -225,191 +194,59 @@ tr:nth-child(even) {
     visibility: visible;
     opacity: 1;
 }
-font {
-    background: linear-gradient(45deg, #4facfe, #00f2fe);
-    color: white;
-    text-align: start;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 10px;
-}
+
+/* ================= BOTONES ================= */
 .buy-button {
-    background-color: firebrick;
+    background-color: #F8B4B4;
     color: white;
     border: none;
     padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
     font-size: 1rem;
     margin-top: 10px;
-}
-.buy-button:hover {
-    background-color: #218838;
-}
-.card h1 {
-    font-family: "Arial Narrow", Arial, sans-serif;
-    font-size: 36px; /* Tamaño del texto */
-    font-weight: bold; /* Negrita */
-    text-transform: uppercase; /* Convertir texto a mayúsculas */
-    text-align: center; /* Centrar el texto */
-    color: #333; /* Color del texto */
-}
-h1.arial{
-    font-family: "Arial Narrow", Arial, sans-serif;
-    font-size: 36px; /* Tamaño del texto */
-    font-weight: bold; /* Negrita */
-    text-transform: uppercase; /* Convertir texto a mayúsculas */
-    text-align: center; /* Centrar el texto */
-    color: #333; /* Color del texto */  
-}
-.registro {
-    font-size: 99px; /* Ajusta el tamaño según necesites */
-    font-family: Arial, sans-serif;
-    font-weight: bold; /* Negrita */
-    text-transform: uppercase; /* Convertir texto a mayúsculas */
-    text-align: center; /* Centrar el texto */
-    color: #333; /* Color del texto */  
+    transition: 0.3s;
 }
 
-nav ul {
-    list-style: none;     /* Quita los puntos de la lista */
-    padding: 0;
-    margin: 0;
-    display: flex;         /* Pone los <li> en fila */
-    justify-content: center; /* Centra horizontalmente los elementos */
-    gap: 20px;             /* Espacio entre los elementos */
-  }
-  
-  nav ul li {
-    display: inline-block; /* (opcional) aunque ya no es necesario con flex */
-  }
-#Metodología{
-    font-family: "arial", serif;
+.buy-button:hover {
+    background-color: #F49797;
 }
+
+/* ================= TEXTOS ================= */
+.card h1,
+h1.arial {
+    font-family: "Arial Narrow", Arial, sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    color: #444;
+}
+
+.registro {
+    font-size: 70px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    color: #5E8C61;
+}
+
+#Metodología {
+    font-family: Arial, serif;
+}
+
 .timestamp {
-    color: #888;
+    color: #999;
     font-weight: bold;
     margin-top: 1.5em;
-  }
-  .musica {
-    color: #2980b9;
+}
+
+.musica {
+    color: #81C784;
     font-style: italic;
-  }
-  .estrofa {
+}
+
+.estrofa {
     margin-bottom: 1.2em;
-  }
-  .form-container {
-    max-width: 500px;
-    margin: 40px auto;
-    padding: 20px;
-    background: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
-}
-
-.formulario-falta {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.formulario-falta label {
-    font-weight: bold;
-    color: #2c3e50;
-}
-
-.formulario-falta input[type="date"],
-.formulario-falta select,
-.formulario-falta input[type="range"] {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 15px;
-}
-
-.formulario-falta output {
-    margin-top: -10px;
-    font-weight: bold;
-    color: #27ae60;
-}
-
-.formulario-falta button {
-    padding: 12px;
-    font-size: 16px;
-    background-color: #2e7d32;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
-
-.formulario-falta button:hover {
-    background-color: #1b5e20;
-}
-.form-container {
-    max-width: 500px;
-    margin: 40px auto;
-    padding: 20px;
-    background: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
-}
-
-.formulario-anotacion {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.formulario-anotacion label {
-    font-weight: bold;
-    color: #333;
-}
-
-.formulario-anotacion input[type="text"],
-.formulario-anotacion input[type="date"] {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 15px;
-}
-
-.formulario-anotacion button {
-    padding: 12px;
-    font-size: 16px;
-    background-color: #2e7d32;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
-
-.formulario-anotacion button:hover {
-    background-color: #1b5e20;
-}
-
-.editar{
-    background-color: #1b5e20;
-    text-decoration: none;
-    color: #ffffff;
-    border-radius: 6px;
-    margin: 4px 6px;
-    padding: 6px 12px;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    
-}
-.eliminar{
-    background-color: hsl(0, 60%, 51%);
-    text-decoration: none;
-    color: #ffffff;
-    border-radius: 6px;
-    margin: 4px 6px;
-    padding: 6px 12px;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    
 }
