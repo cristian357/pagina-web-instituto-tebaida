@@ -4,11 +4,11 @@ body{
     margin: 0;
     padding: 0;
     text-align: center;
-    background: whitesmoke;
+    background: #F9FAFB; /* Fondo pastel claro */
    
 }
 header{
-    background-color:#145a24;/* Verde institucional */
+    background-color:#A8D5BA; /* Verde pastel */
     color: white;
      padding: 20px;
     text-align: center;
@@ -65,8 +65,8 @@ header{
 
 /* Estilos generales del footer */
 footer {
-  background-color: #14532d; /* Verde formal oscuro */
-  color: #d1d5db; /* Gris claro elegante */
+  background-color: #5E8C61; /* Verde oscuro suave */
+  color: #f1f5f2;
   padding: 40px 20px;
   font-family: Arial, sans-serif;
 }
@@ -98,7 +98,7 @@ footer {
 }
 
 .footer-logo h3 {
-  color: #ffffff; /* Blanco para destacar */
+ color: #F8B4B4; /* rojo pastel */
   margin: 0;
 }
 
